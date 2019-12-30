@@ -5,6 +5,7 @@ import  {
     Image,
     StyleSheet,
     SafeAreaView,
+    TouchableOpacity
 } from 'react-native'
 
 function Header(props) {

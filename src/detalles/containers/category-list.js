@@ -7,18 +7,10 @@ import Empty from '../components/empty'
 import Separator from '../../sections/components/horizontal-separator'
 import Category from '../components/category'
 import Layout from '../components/categories-list-layout'
-import { connect } from 'react-redux'
-
-// function mapStateToProps(state) {
-//     // debugger
-//     return {
-//         list: state.CategoryList
-//     }
-// }
 
 class CategoryList extends Component {
-    keyExtractor = item => item.id.toString()
-    renderEmtpy = () => <Empty text="No hay sugerencias :(" />
+    keyExtractor = item => item.id ? item.id.toString() : 0
+    // renderEmtpy = () => <Empty text="No hay sugerencias :(" />
     itemSeparator = () => <Separator />
     renderItem = ({item}) => {
         return (
@@ -28,7 +20,7 @@ class CategoryList extends Component {
     render(){
         return(
             <Layout
-            title="Lugares a visitar"
+            title="Nuestros mejores hoteles"
             >
             <FlatList
             horizontal
@@ -43,5 +35,4 @@ class CategoryList extends Component {
     }
 }
 
-// export default connect(mapStateToProps) (CategoryList)
 export default CategoryList

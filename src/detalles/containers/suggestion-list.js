@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {
   FlatList,
-  Text
 } from 'react-native';
 import Layout from '../components/suggestion-list-layout'
 import Empty from '../components/empty'
@@ -22,7 +21,7 @@ class SuggestionList extends Component {
 
     return (
       <Layout
-        title="hoteles"
+        title=""
         >
         <FlatList
           keyExtractor={this.keyExtractor}
@@ -30,6 +29,7 @@ class SuggestionList extends Component {
           ListEmptyComponent={this.renderEmtpy}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}
+          contentContainerStyle={{ flexGrow: 1 }}
         />
       </Layout>
     )

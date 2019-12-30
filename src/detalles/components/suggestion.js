@@ -3,11 +3,15 @@ import {
     View,
     Image,
     Text,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
 } from 'react-native'
+import { Actions } from 'react-native-router-flux'
 
 function Suggestion(props) {
     return (
+
+        <TouchableOpacity onPress={() => Actions.push("detail", { id: props._id })}>
         <View style={styles.container}>
             <View style={styles.left}>
                 <Image 
@@ -16,6 +20,7 @@ function Suggestion(props) {
                         uri: props.image
                       }}
                 />
+
                 <View style={styles.hotel}>
                     <Text style={styles.hotelText}>Hotel</Text>
                 </View>
@@ -24,16 +29,18 @@ function Suggestion(props) {
             <View style={styles.right}>
                 <Text style={styles.title}>{props.name}</Text>
                 <Text style={styles.city}>{props.city}</Text>
-                <Text style={styles.price}>Precio por noche   {props.price}</Text>
+                <Text style={styles.price}>Precio por noche {props.price}</Text>
                 <Text style={styles.stars}>{props.start}</Text>
             </View>
         </View>
+        </TouchableOpacity>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
+        paddingLeft: 20
     },
     hotel: {
         position: 'absolute',
@@ -69,7 +76,8 @@ const styles = StyleSheet.create({
         fontSize: 11,
         borderRadius: 5,
         overflow: 'hidden',
-        alignContent: 'flex-start'
+        alignContent: 'flex-start',
+        width: 150
     },
     rating: {
         color: '#6b6b6b',

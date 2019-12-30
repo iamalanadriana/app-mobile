@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  View,
   Text,
   StyleSheet,
   ImageBackground,
@@ -21,7 +20,8 @@ function CategoryListLayout(props) {
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 30,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    margin: 0
   },
   title: {
     color: '#4c4c4c',
@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontWeight: 'bold',
     marginLeft: 8,
+    alignContent: 'center',
+    textAlign: 'justify'
   }
 })
 
