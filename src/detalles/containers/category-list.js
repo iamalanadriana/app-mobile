@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { 
-    View, 
-    FlatList 
+import {
+    FlatList
 } from 'react-native'
 import Empty from '../components/empty'
 import Separator from '../../sections/components/horizontal-separator'

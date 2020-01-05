@@ -1,11 +1,8 @@
 import React from 'react';
 
 import {
-  Text,
   StyleSheet,
   TouchableHighlight,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';

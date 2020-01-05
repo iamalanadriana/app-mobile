@@ -1,11 +1,9 @@
 import React from 'react'
 import  {
     View,
-    Text,
     Image,
     StyleSheet,
-    SafeAreaView,
-    TouchableOpacity
+    SafeAreaView
 } from 'react-native'
 
 function Header(props) {

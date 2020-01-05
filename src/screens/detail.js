@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   redes: {
     padding: 20,
     position: 'relative',
-    alignItems: 'center',
+    alignItems: 'center'
   }
 })
 

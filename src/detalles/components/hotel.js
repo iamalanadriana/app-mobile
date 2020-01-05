@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 
-function Suggestion(props) {
+function Hotel(props) {
     return (
 
         <TouchableOpacity onPress={() => Actions.push("detail", { id: props._id })}>
@@ -86,4 +86,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Suggestion
+export default Hotel

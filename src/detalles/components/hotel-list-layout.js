@@ -5,7 +5,7 @@ import {
   StyleSheet
 } from 'react-native'
 
-function SuggestionListLayout(props) {
+function HotelListLayout(props) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{props.title}</Text>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default SuggestionListLayout
+export default HotelListLayout

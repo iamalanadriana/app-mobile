@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import Video from 'react-native-video'
 import {
     StyleSheet,
-    ActivityIndicator,
-    Text
+    ActivityIndicator
 } from 'react-native'
 import Layout from '../component/layout'
 import ControlLayout from '../component/control-layout'
 import PlayPause from '../component/play-pause'
-// import FullScreen from '../component/full-screen'
 
 class Player extends Component {
     state = {
@@ -30,9 +28,6 @@ class Player extends Component {
             paused: !this.state.paused
         })
     }
-    // onFullScreen = () => {
-    //     this.player.presentFullscreenPlayer();
-    // }
     render() {
         return (
             <Layout
@@ -59,10 +54,6 @@ class Player extends Component {
                         onPress={this.playPause}
                         paused={this.state.paused}
                     />
-                    {/* <FullScreen onFullScreen={this.onFullScreen} /> */}
-                    {/* <Text>pantalla-completa</Text>
-                    <Text>progreso</Text>
-                    <Text>tiempo</Text> */}
                 </ControlLayout>
             }
         />

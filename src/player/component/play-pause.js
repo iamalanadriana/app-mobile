@@ -1,11 +1,8 @@
 import React from 'react'
-import { 
-    View,
+import {
     Text,
     StyleSheet,
     TouchableHighlight,
-    TouchableOpacity,
-    TouchableWithoutFeedback,
 } from 'react-native'
 
 function PlayPause(props) {
