@@ -6,11 +6,11 @@ import {
     StyleSheet,
     TouchableOpacity
 } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux'
 
 function Hotel(props) {
     return (
-
         <TouchableOpacity onPress={() => Actions.push("detail", { id: props._id })}>
         <View style={styles.container}>
             <View style={styles.left}>
@@ -30,7 +30,9 @@ function Hotel(props) {
                 <Text style={styles.title}>{props.name}</Text>
                 <Text style={styles.city}>{props.city}</Text>
                 <Text style={styles.price}>Precio por noche {props.price}</Text>
-                <Text style={styles.stars}>{props.start}</Text>
+                <Text style={styles.stars}>{props.stars}
+                    <Icon name="star" size={20} color="#d8e000" />
+                </Text>
             </View>
         </View>
         </TouchableOpacity>
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 7
     },
     hotelText: {
-        color: 'white',
+        color: '#d8e000',
         fontSize: 11,
 
     },
