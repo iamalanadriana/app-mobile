@@ -1,9 +1,6 @@
 import React from 'react';
 
-import {
-  StyleSheet,
-  TouchableHighlight,
-} from 'react-native';
+import {StyleSheet, TouchableHighlight} from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -17,12 +14,11 @@ function FullScreen(props) {
         left: 5,
         top: 5,
         bottom: 5,
-        right: 5
-      }}
-    >
-      <Icon color="#7FB15F" name="md-expand" size={20}></Icon>
+        right: 5,
+      }}>
+      <Icon color="#7FB15F" name="md-expand" size={20} />
     </TouchableHighlight>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -34,7 +30,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     borderRadius: 10,
     borderColor: 'white',
-  }
-})
+  },
+});
 
 export default FullScreen;

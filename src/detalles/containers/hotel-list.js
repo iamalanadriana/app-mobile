@@ -17,7 +17,7 @@ class HotelList extends Component {
       )
   }
   render() {
-    console.log('this.props.lis', this.props.list)
+    // console.log('this.props.lis', this.props.list)
 
     return (
       <Layout>
