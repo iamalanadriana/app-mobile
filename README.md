@@ -6,8 +6,7 @@ Aplicación de hoteles: un ejercicio simple en react-native, de reacción con el
 
 ```bash
 # clonacion de repositorio
-$ git clone https://github.com/iamalanadriana/api-hotels/tree/final
-
+$ git clone https://github.com/iamalanadriana/app-mobile
 # Instalacion de dependencias npm
 $ npm install
 
